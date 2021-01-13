@@ -1,7 +1,4 @@
-python-wordpress-xmlrpc
-markdown
-beautifulsoup4
 PySocks
-
-
-
+beautifulsoup4
+markdown
+python-wordpress-xmlrpc

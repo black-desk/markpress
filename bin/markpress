@@ -1,5 +1,3 @@
 #! /bin/sh
 
-MY_PATH="`dirname \"$0\"`"
-python3 "${MY_PATH}/markpress.py" "$@"
-
+python3 "$(dirname $0)/../lib/markpress.py" "$@"
