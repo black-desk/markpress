@@ -7,7 +7,7 @@ with codecs.open("README.md", encoding="utf-8") as f:
 
 setup(
     name="markpress",
-    version="2.0.1",
+    version="2.0.2",
     license_files=("LICENSE"),
     description="A fast tunnel proxy that help you get through firewalls",
     author="skywind3000",
