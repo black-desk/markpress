@@ -12,9 +12,7 @@ from __future__ import print_function, unicode_literals
 import sys
 import os
 import time
-import config
-import ascmini
-import utime
+from . import config, ascmini, utime
 
 
 #----------------------------------------------------------------------
@@ -166,7 +164,7 @@ class MarkdownDoc (object):
         return '\n'.join(output)
 
     def _convert_default (self, content):
-        import markdown2
+        from . import markdown2
         tabsize = config.options['tabsize']
         content = self._fenced_code_block(content, tabsize)
         extras = [ n for n in MD_EXTRAS ]
@@ -278,7 +276,7 @@ if __name__ == '__main__':
         print(text.decode('gbk'))
         return 0
     def test3():
-        import markdown2
+        from . import markdown2
         extras = MD_EXTRAS
         html = markdown2.markdown('\n`````text\n```cpp\ntext\n```\n`````\n', extras = extras)
         print(html)

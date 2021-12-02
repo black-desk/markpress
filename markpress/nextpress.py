@@ -12,9 +12,7 @@ from __future__ import print_function, unicode_literals
 import sys
 import os
 import time
-import config
-import ascmini
-import utils
+from . import config, ascmini, utils
 
 
 #----------------------------------------------------------------------

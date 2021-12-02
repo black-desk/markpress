@@ -12,8 +12,7 @@ from __future__ import print_function, unicode_literals
 import sys
 import os
 import bs4
-import ascmini
-import config
+from . import ascmini, config
 
 
 #----------------------------------------------------------------------

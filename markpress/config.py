@@ -11,7 +11,7 @@
 from __future__ import print_function, unicode_literals
 import sys
 import os
-import ascmini
+from . import ascmini
 
 
 #----------------------------------------------------------------------
@@ -143,7 +143,7 @@ def proxy(url):
 # create wp
 #----------------------------------------------------------------------
 def wp_client():
-    import wordpress2
+    from . import wordpress2
     url = options['url']
     wp = wordpress2.WordPress(url, options['user'], options['passwd'])
     return wp
